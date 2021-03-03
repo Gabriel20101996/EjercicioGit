@@ -6,7 +6,8 @@ public class Metodos {
 		// TODO Auto-generated method stub
 //System.out.println(metodoConcatenacion("Hola"," Luis"));
 //System.out.println(metodoCaracter('6'));
-System.out.println(metodoRepresentacionDecimal('a'));
+//System.out.println(metodoRepresentacionDecimal('a'));
+		metodoCadenaNumerosDescendente(51,5);
 	}
 	
 	static String metodoConcatenacion(String cadena1, String cadena2) {
@@ -22,6 +23,17 @@ System.out.println(metodoRepresentacionDecimal('a'));
 	static int metodoRepresentacionDecimal(char caracter) {
 		int numero=(int)caracter;
 		return numero;
+	}
+	
+	static void metodoCadenaNumerosDescendente(int numeroReferencia, int numeroDescendiente) {
+		int i=numeroReferencia;
+		System.out.println(numeroReferencia);
+		do {
+			numeroReferencia=numeroReferencia-numeroDescendiente;
+			System.out.println(numeroReferencia);
+			i=i-numeroDescendiente;
+			}while(i>numeroDescendiente);
+		
 	}
 	
 	
