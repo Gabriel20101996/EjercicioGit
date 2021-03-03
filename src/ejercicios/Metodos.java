@@ -4,8 +4,9 @@ public class Metodos {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-System.out.println(metodoConcatenacion("Hola"," Luis"));
-System.out.println(metodoCaracter('1'));
+//System.out.println(metodoConcatenacion("Hola"," Luis"));
+//System.out.println(metodoCaracter('6'));
+System.out.println(metodoRepresentacionDecimal('a'));
 	}
 	
 	static String metodoConcatenacion(String cadena1, String cadena2) {
@@ -16,6 +17,11 @@ System.out.println(metodoCaracter('1'));
 	static char metodoCaracter(int numero) {
 		char caracter=(char)(numero+'0');
 		return caracter;
+	}
+	
+	static int metodoRepresentacionDecimal(char caracter) {
+		int numero=(int)caracter;
+		return numero;
 	}
 	
 	
