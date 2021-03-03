@@ -6,7 +6,8 @@ public class Metodos {
 		// TODO Auto-generated method stub
 //System.out.println(metodoConcatenacion("Hola"," Luis"));
 //System.out.println(metodoCaracter('6'));
-System.out.println(metodoRepresentacionDecimal('a'));
+//System.out.println(metodoRepresentacionDecimal('a'));
+		metodoMultiplosDeTres(21);
 	}
 	
 	static String metodoConcatenacion(String cadena1, String cadena2) {
@@ -24,6 +25,12 @@ System.out.println(metodoRepresentacionDecimal('a'));
 		return numero;
 	}
 	
-	
+	static void metodoMultiplosDeTres(int numero) {
+		for (int i = 0; i<=numero; i++) {
+			if(i%3==0) {
+				System.out.println(i);
+			}
+		}
+	}
 	
 }
