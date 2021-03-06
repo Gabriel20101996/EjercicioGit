@@ -7,7 +7,11 @@ public class Metodos {
 //System.out.println(metodoConcatenacion("Hola"," Luis"));
 //System.out.println(metodoCaracter('6'));
 //System.out.println(metodoRepresentacionDecimal('a'));
+		
 		metodoMultiplosDeTres(21);
+
+		metodoCadenaNumerosDescendente(51,5);
+
 	}
 	
 	static String metodoConcatenacion(String cadena1, String cadena2) {
@@ -25,6 +29,7 @@ public class Metodos {
 		return numero;
 	}
 	
+
 	static void metodoMultiplosDeTres(int numero) {
 		for (int i = 0; i<=numero; i++) {
 			if(i%3==0) {
@@ -32,5 +37,18 @@ public class Metodos {
 			}
 		}
 	}
+
+	static void metodoCadenaNumerosDescendente(int numeroReferencia, int numeroDescendiente) {
+		int i=numeroReferencia;
+		System.out.println(numeroReferencia);
+		do {
+			numeroReferencia=numeroReferencia-numeroDescendiente;
+			System.out.println(numeroReferencia);
+			i=i-numeroDescendiente;
+			}while(i>numeroDescendiente);
+		
+	}
+	
+
 	
 }
